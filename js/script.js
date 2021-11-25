@@ -9,7 +9,7 @@ const showToast = (message) => {
   const toast = document.getElementById("toast");
   toast.setAttribute("class", "active");
   toast.innerText = message
-  
+
   setTimeout(() => {
     toast.removeAttribute("class", "active");
   }, 3000);
@@ -25,7 +25,12 @@ const handleCreateNewTask = (e) => {
 
   if (description.length < 10) {
     showToast("A descrição deve ter mais que 10 caracteres");
-    return 
+    return
+  }
+
+  if (limitDate < createDate) {
+    showToast("A data limite tem que ser maior que a data criada");
+    return
   }
 
   const task = {
