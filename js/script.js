@@ -29,8 +29,6 @@ const handleCreateNewTask = (e) => {
 };
 
 // Função mudar cor
-const changeBackground = (e) => {
-  e.preventDefault();
-  let darkButton = document.getElementById("dark");
-  document.body.style.backgroundColor = darkButton.onclick()? 'blue' : backgroundColor.default;
+const changeBackground = (checkbox) => {
+  document.body.style.backgroundColor = checkbox.checked? 'blue' : backgroundColor.default;
 }
