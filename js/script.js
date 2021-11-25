@@ -13,7 +13,7 @@ const handleCreateNewTask = (e) => {
   const limitDate = document.getElementById("limit-date").value;
   const description = document.getElementById("description").value;
 
-  if (description < 10) {
+  if (description.trim().length < 10) {
     // showToast("A descrição deve ter mais que 10 caracteres");
   }
 
@@ -27,3 +27,10 @@ const handleCreateNewTask = (e) => {
 
   // const form = document.getElementById("create-new-task");
 };
+
+// Função mudar cor
+const changeBackground = (e) => {
+  e.preventDefault();
+  let darkButton = document.getElementById("dark");
+  document.body.style.backgroundColor = darkButton.onclick()? 'blue' : backgroundColor.default;
+}
