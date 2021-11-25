@@ -20,9 +20,9 @@ A primeira página deve ter um formulário com os inputs:
 
 ## ✅ Validações:
 - [x] Nenhum campo pode ser vazio.
-- [ ] A descrição deve ter mais que 10 caracteres.
-- [ ] OPCIONAL: a data limite da tarefa deve ser hoje ou no futuro.
-- [ ] Quando o usuário não preencher corretamente deve ser exibido um alerta indicando que existem erros na criação da tarefa.
+- [x] A descrição deve ter mais que 10 caracteres.
+- [x] OPCIONAL: a data limite da tarefa deve ser hoje ou no futuro.
+- [x] Quando o usuário não preencher corretamente deve ser exibido um alerta indicando que existem erros na criação da tarefa.
 
 <br/>
 
