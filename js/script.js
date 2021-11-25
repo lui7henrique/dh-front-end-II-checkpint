@@ -7,9 +7,9 @@ setValueOfCreateDateInput();
 
 const showToast = (message) => {
   const toast = document.getElementById("toast");
-  console.log(toast);
   toast.setAttribute("class", "active");
   toast.innerText = message
+  
   setTimeout(() => {
     toast.removeAttribute("class", "active");
   }, 3000);
@@ -24,7 +24,6 @@ const handleCreateNewTask = (e) => {
   const description = document.getElementById("description").value;
 
   if (description.length < 10) {
-    console.log("teste");
     showToast("A descrição deve ter mais que 10 caracteres");
     return 
   }
