@@ -28,7 +28,6 @@ const handleCreateNewTask = (e) => {
   // const form = document.getElementById("create-new-task");
 };
 
-// Função mudar cor
 const changeBackground = (checkbox) => {
   document.body.style.backgroundColor = checkbox.checked? 'black' : backgroundColor.default;
   document.body.style.color = checkbox.checked? 'white' : color.default;
