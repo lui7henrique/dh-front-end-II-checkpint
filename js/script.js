@@ -5,6 +5,16 @@ const setValueOfCreateDateInput = () => {
 };
 setValueOfCreateDateInput();
 
+const showToast = (message) => {
+  const toast = document.getElementById("toast");
+  console.log(toast);
+  toast.setAttribute("class", "active");
+  toast.innerText = message
+  setTimeout(() => {
+    toast.removeAttribute("class", "active");
+  }, 3000);
+};
+
 const handleCreateNewTask = (e) => {
   e.preventDefault();
 
@@ -13,8 +23,10 @@ const handleCreateNewTask = (e) => {
   const limitDate = document.getElementById("limit-date").value;
   const description = document.getElementById("description").value;
 
-  if (description < 10) {
-    // showToast("A descrição deve ter mais que 10 caracteres");
+  if (description.length < 10) {
+    console.log("teste");
+    showToast("A descrição deve ter mais que 10 caracteres");
+    return 
   }
 
   const task = {
