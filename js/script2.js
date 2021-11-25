@@ -1,4 +1,4 @@
-let div = document.querySelector('div');
+let cards = document.querySelector('#cards');
 
 async function tarefas(){
 
@@ -10,9 +10,9 @@ async function tarefas(){
     
     arrayTarefas.forEach(tarefa => {        
         if (tarefa.completed === true){
-            div.innerHTML += `<div><p>${tarefa.id}: <del>${tarefa.title}</del></p></div>`
+            cards.innerHTML += `<div><p>${tarefa.id}: <del>${tarefa.title}</del></p></div>`
         } else {
-            div.innerHTML += `<div><p>${tarefa.id}: <b>${tarefa.title}</b></p></div>`
+            cards.innerHTML += `<div><p>${tarefa.id}: <b>${tarefa.title}</b></p></div>`
         }
     });
 }
