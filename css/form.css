@@ -24,6 +24,8 @@ input {
   padding: 1rem;
   border: 1px solid #c2c2c2;
   outline: none;
+  border-radius: 9px;
+  
 }
 
 
@@ -31,9 +33,12 @@ input {
 button[type="submit"] {
   background: rebeccapurple;
   color: white;
+  font-weight: bold;
   border: none;
   outline: none;
   cursor: pointer;
+  border-radius: 9px;
+  
 }
 
 button[type="submit"]:hover {

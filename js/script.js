@@ -27,6 +27,11 @@ const handleCreateNewTask = (e) => {
     return
   }
 
+  if (limitDate < createDate) {
+    showToast("A data limite tem que ser maior que a data criada");
+    return
+  }
+
   const task = {
     createDate,
     limitDate,
