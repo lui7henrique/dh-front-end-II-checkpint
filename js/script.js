@@ -9,7 +9,6 @@ const showToast = (message) => {
   const toast = document.getElementById("toast");
   toast.setAttribute("class", "active");
   toast.innerText = message
-
   setTimeout(() => {
     toast.removeAttribute("class", "active");
   }, 3000);

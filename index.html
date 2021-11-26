@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/form.css">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do</title>
+  </head>
+  <body>
+    <header></header>
 
-  <link rel="stylesheet" href="./css/dark.css">
-
-  <title>To-do</title>
-</head>
-
-<body>
-  <header>
-    <nav class="btn-bg">
-      <input onclick="changeBackground(this)" type="checkbox" class="changebg" id="switch">
-      <label class="changebg" for="switch">Dark Mode</label>
-    </nav>
-    <form action="" onsubmit="handleCreateNewTask(event)" id="create-new-task">
-      <div>
-        <label for="create-date">Data de criação: </label>
-        <input type="date" id="create-date" name="create-date" disabled required />
-      </div>
-      <div>
-        <label for="limit-date">Data limite:</label>
-        <input type="date" id="limit-date" name="limit-date" required />
-      </div>
-      <div>
-        <label for="description">Descrição</label>
-        <input type="text" placeholder="Descrição" id="description" name="description" required />
-      </div>
-      <button type="submit">Adicionar</button>
-    </form>
-  </header>
-
-  <main></main>
-  <footer></footer>
-  <script src="./js/script.js"></script>
-</body>
-
+    <main>
+      <form
+        action=""
+        onsubmit="handleCreateNewTask(event)"
+        id="create-new-task"
+      >
+        <div class="input">
+          <label for="create-date">Data de criação: </label>
+          <input
+            type="date"
+            id="create-date"
+            name="create-date"
+            disabled
+            required
+          />
+        </div>
+        <div class="input">
+          <label for="limit-date">Data limite:</label>
+          <input type="date" id="limit-date" name="limit-date" required />
+        </div>
+        <div class="input">
+          <label for="description">Descrição</label>
+          <input
+            type="text"
+            placeholder="Descrição"
+            id="description"
+            name="description"
+            required
+          />
+        </div>
+        <button type="submit">Adicionar</button>
+      </form>
+    </main>
+    <footer></footer>
+    <div id="toast">Teste</div>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
