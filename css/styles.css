@@ -28,4 +28,10 @@ body {
 header {
   height: 30vh;
   background: #7600bb;
+  
+}
+
+h1 {
+  padding: 3rem;
+  margin-bottom: 1rem;
 }
