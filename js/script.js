@@ -5,6 +5,16 @@ const setValueOfCreateDateInput = () => {
 };
 setValueOfCreateDateInput();
 
+const showToast = (message) => {
+  const toast = document.getElementById("toast");
+  toast.setAttribute("class", "active");
+  toast.innerText = message
+
+  setTimeout(() => {
+    toast.removeAttribute("class", "active");
+  }, 3000);
+};
+
 const handleCreateNewTask = (e) => {
   e.preventDefault();
 
@@ -13,8 +23,9 @@ const handleCreateNewTask = (e) => {
   const limitDate = document.getElementById("limit-date").value;
   const description = document.getElementById("description").value;
 
-  if (description.trim().length < 10) {
-    // showToast("A descrição deve ter mais que 10 caracteres");
+  if (description.length < 10) {
+    showToast("A descrição deve ter mais que 10 caracteres");
+    return
   }
 
   const task = {
@@ -28,8 +39,8 @@ const handleCreateNewTask = (e) => {
   // const form = document.getElementById("create-new-task");
 };
 
-const changeBackground = (checkbox) => {
-  document.body.style.backgroundColor = checkbox.checked? 'black' : backgroundColor.default;
-  document.body.style.color = checkbox.checked? 'white' : color.default;
-  document.getElementById('container').style.color = checkbox.checked? 'black' : color.default;
+const changeBackground = (event) => {
+  document.body.style.backgroundColor = event.checked ? 'black' : "";
+  document.body.style.color = event.checked ? 'white' : "";
+  document.getElementById('container').style.color = event.checked ? 'black' : "";
 }
