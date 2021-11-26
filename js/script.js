@@ -34,7 +34,5 @@ const handleCreateNewTask = (e) => {
     description,
   };
 
-  console.log(task);
-
   // const form = document.getElementById("create-new-task");
 };
