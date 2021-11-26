@@ -30,7 +30,7 @@ A primeira página deve ter um formulário com os inputs:
 - [ ] Quando o usuário clicar em submit, se ele passar pela validação, a anotação deve ser exibida na tela por meio de um card.
 - [ ] No card da anotação deve ter um botão para excluir a anotação. - Quando ele for clicado deverá ser exibido um aviso confirmando a intenção de excluir a anotação. Se o usuário confirmar a intenção de excluir, o card desta nota deve desaparecer.
 - [ ] Ainda no card da anotação deverá existir um checkbox que ao ser clicado faz o texto daquela anotação ficar tachado. Tarefa concluída.
-- [ ] Opcional: Escolher cor do fundo do card - (versão dark)
+- [x] Opcional: Escolher cor do fundo do card - (versão dark)
 
 <br/>
 

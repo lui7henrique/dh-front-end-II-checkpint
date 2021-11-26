@@ -9,7 +9,6 @@ const showToast = (message) => {
   const toast = document.getElementById("toast");
   toast.setAttribute("class", "active");
   toast.innerText = message
-
   setTimeout(() => {
     toast.removeAttribute("class", "active");
   }, 3000);
@@ -43,3 +42,9 @@ const handleCreateNewTask = (e) => {
 
   // const form = document.getElementById("create-new-task");
 };
+
+const changeBackground = (event) => {
+  document.body.style.backgroundColor = event.checked ? 'black' : "";
+  document.body.style.color = event.checked ? 'white' : "";
+  document.getElementById('container').style.color = event.checked ? 'black' : "";
+}
