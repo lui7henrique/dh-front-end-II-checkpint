@@ -11,14 +11,16 @@ body {
 }
 
 #toast {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  background: white;
-  padding: 1rem;
+  padding: 1rem 2rem;
   transform: translateX(200%);
   transition: all 0.4s ease-in-out;
   margin: 1rem;
+  border-radius: 5px;
+  background: #25155c;
+  color: white;
 }
 
 #toast.active {
@@ -26,11 +28,23 @@ body {
 }
 
 header {
-  height: 30vh;
-  background: #7600bb;
+  height: 50vh;
+  background: #37208b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  user-select: none;
+}
+
+header h1 {
+  font-size: 64px;
+  font-style: italic;
 }
 
 main {
   max-width: 1180px;
   margin: 0 auto;
+  padding: 1rem;
 }

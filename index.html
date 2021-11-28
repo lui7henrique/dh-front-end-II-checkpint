@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/form.css" />
     <link rel="stylesheet" href="./css/task-list.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
 
     <title>To-do</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <h1>To-do ✔</h1>
+      <p>Gerencie suas tarefas de forma inteligente!</p>
+    </header>
 
     <main>
       <form
@@ -45,55 +49,31 @@
         </div>
         <button type="submit">Adicionar</button>
       </form>
-      <section id="task-list">
-        <div class="task">
-          <div class="content">
-            <div>✅</div>
-            <div class="infos">
-              <h2>Beber água</h2>
-              <div class="dates">
-                <sub>18/11/2002</sub>
-                <sub>18/11/2002</sub>
-              </div>
-            </div>
-          </div>
-
-          <div>❌</div>
-        </div>
-        
-        <div class="task">
-          <div class="content">
-            <div>✅</div>
-            <div class="infos">
-              <h2>Beber água</h2>
-              <div class="dates">
-                <sub>18/11/2002</sub>
-                <sub>18/11/2002</sub>
-              </div>
-            </div>
-          </div>
-
-          <div>❌</div>
-        </div>
-               
-        <div class="task">
-          <div class="content">
-            <div>🟩</div>
-            <div class="infos">
-              <h2>Beber água</h2>
-              <div class="dates">
-                <sub>18/11/2002</sub>
-                <sub>18/11/2002</sub>
-              </div>
-            </div>
-          </div>
-
-          <div>❌</div>
-        </div>
-      </section>
+      <section id="task-list"></section>
     </main>
     <footer></footer>
-    <div id="toast">Teste</div>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <div class="modal-close" onClick="handleCloseConfirmDeleteModal()">
+          ✖
+        </div>
+        <h3>Deseja excluir essa tarefa?</h3>
+        <div class="modal-buttons">
+          <button
+            class="cancel-delete"
+            onClick="handleCloseConfirmDeleteModal()"
+          >
+            Cancelar
+          </button>
+          <button class="confirm-delete">Confirmar</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="toast"></div>
     <script src="./js/script.js"></script>
+    <script src="./js/task.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

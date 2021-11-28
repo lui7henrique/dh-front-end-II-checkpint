@@ -12,7 +12,7 @@ Olá Houser, tudo bem com você? Esta atividade tem como objetivo servir como se
 	
 A primeira página deve ter um formulário com os inputs: 
 - [x] Data de criação: o usuário não poderá alterar esse input, mas ele deve ser exibido.
-- [x]  Data limite da tarefa: data que o usuário deseja terminar aquela tarefa.
+- [x] Data limite da tarefa: data que o usuário deseja terminar aquela tarefa.
 - [x] Descrição: texto da tarefa.
 - [x] Botão de submit.
 
@@ -20,16 +20,16 @@ A primeira página deve ter um formulário com os inputs:
 
 ## ✅ Validações:
 - [x] Nenhum campo pode ser vazio.
-- [ ] A descrição deve ter mais que 10 caracteres.
-- [ ] OPCIONAL: a data limite da tarefa deve ser hoje ou no futuro.
-- [ ] Quando o usuário não preencher corretamente deve ser exibido um alerta indicando que existem erros na criação da tarefa.
+- [x] A descrição deve ter mais que 10 caracteres.
+- [x] OPCIONAL: a data limite da tarefa deve ser hoje ou no futuro.
+- [x] Quando o usuário não preencher corretamente deve ser exibido um alerta indicando que existem erros na criação da tarefa.
 
 <br/>
 
 ## ⚙ Funcionalidades:
-- [ ] Quando o usuário clicar em submit, se ele passar pela validação, a anotação deve ser exibida na tela por meio de um card.
-- [ ] No card da anotação deve ter um botão para excluir a anotação. - Quando ele for clicado deverá ser exibido um aviso confirmando a intenção de excluir a anotação. Se o usuário confirmar a intenção de excluir, o card desta nota deve desaparecer.
-- [ ] Ainda no card da anotação deverá existir um checkbox que ao ser clicado faz o texto daquela anotação ficar tachado. Tarefa concluída.
+- [x] Quando o usuário clicar em submit, se ele passar pela validação, a anotação deve ser exibida na tela por meio de um card.
+- [x] No card da anotação deve ter um botão para excluir a anotação. - Quando ele for clicado deverá ser exibido um aviso confirmando a intenção de excluir a anotação. Se o usuário confirmar a intenção de excluir, o card desta nota deve desaparecer.
+- [x] Ainda no card da anotação deverá existir um checkbox que ao ser clicado faz o texto daquela anotação ficar tachado. Tarefa concluída.
 - [ ] Opcional: Escolher cor do fundo do card - (versão dark)
 
 <br/>
