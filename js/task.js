@@ -57,7 +57,7 @@ const handleCreateNewTask = (e) => {
 
   newTask.innerHTML = `
     <div class="content">
-      <input type="checkbox" onclick="handleToggleTask('${id}', '${checkBoxId}')" id="${checkBoxId}" /> 
+      <input class="pointer" type="checkbox" onclick="handleToggleTask('${id}', '${checkBoxId}')" id="${checkBoxId}" /> 
       <div class="infos">
         <h2>${description}</h2>
         <div class="dates">
@@ -66,7 +66,7 @@ const handleCreateNewTask = (e) => {
         </div>
       </div>
     </div>
-    <div onClick="handleDelete('${id}')">✖</div>
+    <div class="pointer" onClick="handleDelete('${id}')">✖</div>
   `;
 
   list.append(newTask);
