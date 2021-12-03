@@ -49,12 +49,22 @@ main {
   padding: 1rem;
 }
 
+#api-tasks div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 #cards div {
-  background-color: #ccc;
+  background-color: rgba(93, 0, 168, 0.3);
   padding: 1.5rem;
   margin: 1rem 2rem;
   border-radius: .5rem;
   box-shadow: 0 8px 8px -4px;
+}
+
+#cards div:hover {
+  transition: all ease-in-out 0.4s; 
+  color:#37208b;
 }
 
 a:visited{
