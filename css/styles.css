@@ -49,38 +49,27 @@ main {
   padding: 1rem;
 }
 
-#api-tasks div {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+nav {
+  margin-top: 1rem;
 }
 
-#cards div {
-  background-color: rgba(93, 0, 168, 0.3);
-  padding: 1.5rem;
-  margin: 1rem 2rem;
-  border-radius: .5rem;
-  box-shadow: 0 8px 8px -4px;
-}
-
-#cards div:hover {
-  transition: all ease-in-out 0.4s; 
-  color:#37208b;
-}
-
-a:visited{
-  text-decoration: none;
-  color: white;
-}
-
-a{
-  text-decoration: none;
-  color: white;
-}
-
-#icon{
+#icon {
   width: 25px;
+  filter: brightness(0) invert(1);
 }
 
-#api-button{
+#api-button a {
   padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
