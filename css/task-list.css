@@ -5,13 +5,11 @@
   margin-top: 1rem;
 }
 
-
-
 .task {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #f1f1f1;
+  background: white;
   padding: 1rem;
   transition: all 0.2s ease-in-out;
   overflow: hidden;
@@ -22,7 +20,7 @@
   text-decoration: line-through;
 }
 
-.task.done{
+.task.done {
   filter: brightness(0.9);
 }
 
@@ -36,9 +34,8 @@
   display: flex;
 }
 
-
 .limit-date {
-  padding-left : 1rem;
+  padding-left: 1rem;
 }
 
 .create-date {
