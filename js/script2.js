@@ -17,3 +17,7 @@ async function tarefas() {
 }
 
 tarefas();
+
+const backToHome = () => {
+  window.location.href = "index.html";
+};
