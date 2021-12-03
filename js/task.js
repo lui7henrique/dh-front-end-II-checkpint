@@ -66,7 +66,7 @@ const handleCreateNewTask = (e) => {
         </div>
       </div>
     </div>
-    <div onClick="handleDelete('${id}')">✖</div>
+    <div class="deleteIcon" onClick="handleDelete('${id}')">✖</div>
   `;
 
   list.append(newTask);
