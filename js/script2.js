@@ -1,4 +1,5 @@
-let cards = document.querySelector("#cards");
+let cards = document.querySelector("#api-tasks");
+let button = document.querySelector("button");
 
 async function tarefas() {
   let url = `https://jsonplaceholder.typicode.com/todos/`;
@@ -16,4 +17,6 @@ async function tarefas() {
   });
 }
 
-tarefas();
+const backToHome = () => {
+  window.location.href = "index.html";
+};

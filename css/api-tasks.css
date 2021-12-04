@@ -1,0 +1,75 @@
+.back-button {
+    position: absolute;
+    top: 0;
+    margin: 1rem;
+    padding: 0.7rem 1rem;
+    user-select: none;
+    cursor: pointer;
+    background: #ffffff;
+    color: #25155c;
+  }
+  
+  #api-tasks {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .task {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .task:hover {
+    filter: brightness(0.9);
+  }
+  
+  .task h2 {
+    opacity: 0.5;
+    user-select: none;
+  }
+  
+  button {
+    background: white;
+    color: #37208b;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 1.4rem;
+    transition: all 0.6s;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.6s;
+  }
+  
+  button:hover span {
+    color: #747474;
+    padding-right: 20px;
+  }
+  
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.6s;
+  }
+  
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
