@@ -39,10 +39,10 @@ A primeira página deve ter um formulário com os inputs:
 <br/>
 
 Agora nós vamos criar uma outra página, onde iremos consumir uma api de lista de tarefas.
-- [ ] O end-point “https://jsonplaceholder.typicode.com/todos/” responde com um JSON com 200 tarefas. Essas 200 tarefas devem ser consumidas pelo JS e renderizadas também como cards na página.
-- [ ] Nas tarefas onde o atributo “completed": true” o texto do atributo title deve estar tachado. Pois significa que a tarefa ja foi completada.
-- [ ] Nas tarefas onde o atributo “completed": false” o texto do atributo title deve estar em negrito. Pois significa que a tarefa está a fazer. 
-- [ ] Exiba também o conteúdo do atributo “id”.
+- [x] O end-point “https://jsonplaceholder.typicode.com/todos/” responde com um JSON com 200 tarefas. Essas 200 tarefas devem ser consumidas pelo JS e renderizadas também como cards na página.
+- [x] Nas tarefas onde o atributo “completed": true” o texto do atributo title deve estar tachado. Pois significa que a tarefa ja foi completada.
+- [x] Nas tarefas onde o atributo “completed": false” o texto do atributo title deve estar em negrito. Pois significa que a tarefa está a fazer. 
+- [x] Exiba também o conteúdo do atributo “id”.
 
 
 
